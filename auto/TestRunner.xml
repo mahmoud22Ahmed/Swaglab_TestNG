@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Login Suite">
+
+
+    <test name="Test on chrome">
+        <parameter name="username" value="standard_user"/>
+        <parameter name="password" value="secret_sauce"/>
+        <parameter name="username_invalid" value="standard_usr"/>
+        <parameter name="password_invalid" value="secret_sace"/>
+        <parameter name="browser" value="chrome"/>
+
+        <groups>
+            <run>
+                <include name="valid"/>
+                <include name="invalid"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="TestNG.TestNG"/>
+        </classes>
+    </test>
+
+    
+
+
+</suite>
