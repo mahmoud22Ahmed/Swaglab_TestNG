@@ -1,0 +1,5 @@
+to run all test cases:
+ mvn test
+ *as you add XML of your test suite
+to run specified method in class:
+ mvn test -Dtest=Class#method
